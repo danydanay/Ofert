@@ -1,0 +1,431 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{vb:stylevar textdirection}" lang="{vb:stylevar languagecode}" id="vbulletin_html">
+ <head>
+    <title>{vb:raw vboptions.bbtitle} - {vb:raw pagetitle}</title>
+    {vb:raw headinclude}
+    {vb:raw headinclude_bottom}
+ <style type="text/CSS">
+ #containertab {
+ margin: 0 auto;
+ width: 75%; /* Ancho del contenedor */
+}
+#containertab input {
+ height: 2.5em;
+ visibility: hidden;
+}
+#containertab label {
+ background: #A9D0F5; /* Fondo de las pestañas */
+ border-radius: .25em .25em 0 0;
+ color: #888; /* Color del texto de las pestañas */
+ cursor: pointer;
+ display: block;
+ float: left;
+ font-size: 1em; /* Tamaño del texto de las pestañas */
+ height: 2.5em;
+ line-height: 2.5em;
+ margin-right: .25em;
+ padding: 0 1.5em;
+ text-align: center;
+}
+#containertab input:hover + label {
+ background: #ddd; /* Fondo de las pestañas al pasar el cursor por encima */
+ color: #666; /* Color del texto de las pestañas al pasar el cursor por encima */
+}
+#containertab input:checked + label {
+ background: #f1f1f1; /* Fondo de las pestañas al presionar */
+ color: #444; /* Color de las pestañas al presionar */
+ position: relative;
+ z-index: 6;
+}
+#contenttab {
+ background: #f1f1f1; /* Fondo del contenido */
+ border-radius: 0 .25em .25em .25em;
+ min-height: 20em; /* Alto del contenido */
+ position: relative;
+ width: 100%;
+ z-index: 5;
+display:block;
+}
+
+#contenttab div {
+ opacity: 0;
+ padding: 1.5em;
+ z-index: -100;
+ position: absolute;
+
+display:block;
+}
+
+#content-1 p {
+
+ margin-bottom: 1em;
+display:block;
+}
+#content-1 p.left img {
+ float: left;
+ margin-right: 1em;
+display:block;
+}
+#content-1 p.right {
+ float: right;
+ margin-left: 1em;
+}
+#content-1 p.last {
+ margin-bottom: 0;
+display:block;
+}
+#content-2 p {
+  margin-bottom: 1em;
+display:inline-block;
+}
+#content-2 p.column-right {
+ margin-left: 3%;display:inline-block;
+}
+#content-2 p img {
+display:inline-block;
+ margin: 0 auto 1em auto;
+}
+#content-3 p,
+#content-3 ul {
+ margin-bottom: 1em;
+}
+#content-3 ul {
+ margin-left: 2em;
+}#content-3 p.left img {
+ float: left;
+ margin-right: 1em;
+display:block;
+}
+#content-4 p {
+ clear: both;
+ margin-bottom: 1em;
+}
+#content-4 p.left img {
+ float: left;
+ margin-right: 1em;
+}
+#content-4 p.last {
+ margin-bottom: 0;
+}
+#content-5 p {
+ clear: both;
+ margin-bottom: 1em;
+}
+#content-5 p.left img {
+ float: left;
+ margin-right: 1em;
+}
+#content-5 p.last {
+ margin-bottom: 0;
+}
+
+#content-6 p {
+ clear: both;
+ margin-bottom: 1em;
+}
+#content-6 p.left img {
+ float: left;
+ margin-right: 1em;
+}
+#content-6 p.last {
+ margin-bottom: 0;
+}
+
+
+
+#containertab input#tab-1:checked ~ #contenttab #content-1,
+#containertab input#tab-2:checked ~ #contenttab #content-2,
+#containertab input#tab-3:checked ~ #contenttab  #content-3,
+#containertab input#tab-4:checked ~ #contenttab #content-4,
+#containertab input#tab-5:checked ~ #contenttab #content-5,
+#containertab input#tab-6:checked ~ #contenttab #content-6 {
+ opacity: 1;
+ z-index: 100;
+display:block;
+position:relative;
+}
+
+
+</style>
+  </head>
+  <body>
+    
+    {vb:raw header}
+<div id="pagetitle">
+      <h1>{vb:raw pagetitle}</h1>
+    </div>
+    
+    <h2 class="blockhead">Las ofertas de Foro-PTC</h2>
+   <div class="blockbody">
+      <div class="blockrow">
+        
+
+ <div id="containertab">
+  <!--Pestaña 1 activa por defecto-->
+  <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+  <label for="tab-1">Forex </label>
+  <!--Pestaña 2 inactiva por defecto-->
+  <input id="tab-2" type="radio" name="tab-group" />
+  <label for="tab-2">Apuestas</label>
+  <!--Pestaña 3 inactiva por defecto-->
+  <input id="tab-3" type="radio" name="tab-group" />
+  <label for="tab-3">Casino</label>
+  <input id="tab-4" type="radio" name="tab-group" />
+  <label for="tab-4">Opciones binarias</label> 
+  <input id="tab-5" type="radio" name="tab-group" />
+  <label for="tab-5">Registros</label>
+  <input id="tab-6" type="radio" name="tab-group" />
+  <label for="tab-6">Aún más</label>
+  <!--Contenido a mostrar/ocultar-->
+
+
+
+<div id="contenttab">
+   <!--Contenido de la Pestaña 1-->
+<div id="content-1">
+    <p class="left">
+<a href="http://www.etoro.com/B6316_A32485_TClick.aspx" Target="_Top"><img border="0" src="http://www.etoro.com/B6316_A32485_TGet.aspx" alt="" width="200" height="200"></a>
+<b><i><h2>eToro</h2> </i></b>
+<p>eToro es una de los brokers mejor valorados por sus millones usuarios repartidos en sus 5 continentes. Si eres un trader novato, posiblemente eToro es la mejor elección gracias a su formato social, el Openbook, que nos permite estar en contacto permanente con otros inversores, y conocer en cada momento sus operaciones en la plataforma.</p>
+
+<p> Con el Openbook de Etoro, podemos además rentabilizar nuestro dinero sin necesidad de ser expertos en el mercado de divisas, de hecho, no hace falta tener ningún conocimiento, simplemente elegir de manera correcta a los traders profesionales a los que nos pondremos a copiar con nuestro dinero. En Foro-PTC te asesoraremos para que consigas entre un 5 y un 10% mensual.</p>
+<p>eToro es un broker registrado en muchos países, de cuya fiabilidad no podemos dudar ni un segundo.</p></p>
+
+<p text=red><b><vb:if condition="is_member_of($bbuserinfo, 48, 2)"><font-color="red">Nuestra oferta:</b> Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+¿Hablamos de rentabilidad?Tenemos 3 planes:<ul><li>Deposita 200$ y te damos un  bono de 50$. Si depositas entre 100 y 200$, te damos 25$.
+<br><div="condiciones">¿Cuando?</div> Máximo un mes desde tu depósito
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. El  pago te lo enviamos en el procesador de pagos que eligas
+<br><div="condiciones">¿Condiciones?</div> Usar tu cuenta de eToro. Al menos 10 operaciones.</li><li>
+Te garantizamos una ganancia del 5% al mes, durante 3 meses. Si tu cuenta acaba con menos dinero, te lo damos nosotros!
+<br><div="condiciones">¿Cuando?</div> Al acabar el tercer mes desde tu depósito
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Despúes te diremos a qué trader copiar en el OpenBook.  Para no salirte de la oferta, debes seguir nuestras instrucciones.
+<br><div="condiciones">¿Condiciones?</div> No modificar nada de lo que hagamos, ni abrir operaciones.</li>
+<li>¡Nosotros te llevamos la cuenta! Con una rentabilidad media del 25%, y tu dinero garantizado
+<br><div="condiciones">¿Cuando?</div> 1-3 meses, negociables.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Avisanos cuando lo hagas, para empezar a trabajar con tu cuenta
+<br><div="condiciones">¿Condiciones?</div> Tu dinero está garantizado. Lo único que tienes que hacer es esperar. No puedes abrir ni modificar ninguna operación. Cuando tu ganancia supere el 50%, nos quedaremos con el 50% de los beneficios extra</li></ul></vb:if></font>
+
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> 
+
+Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+¿Hablamos de rentabilidad?Tenemos 3 planes:<ul><li>Deposita 200$ y te damos un  bono de 70$. Si depositas entre 100 y 200$, te damos 40$.
+<br><div="condiciones">¿Cuando?</div> Máximo 20días desde tu depósito
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. El  pago te lo enviamos en el procesador de pagos que eligas
+<br><div="condiciones">¿Condiciones?</div> Usar tu cuenta de eToro. Al menos 10 operaciones.</li><li>
+Te garantizamos una ganancia del 8% al mes, durante 3 meses. Si tu cuenta acaba con menos dinero, te lo damos nosotros!
+<br><div="condiciones">¿Cuando?</div> Al acabar el tercer mes desde tu depósito. También planes para 1 y 2 meses
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Despúes te diremos a qué trader copiar en el OpenBook.  Para no salirte de la oferta, debes seguir nuestras instrucciones.
+<br><div="condiciones">¿Condiciones?</div> No modificar nada de lo que hagamos, ni abrir operaciones.</li>
+<li>¡Nosotros te llevamos la cuenta! Con una rentabilidad media del 25%, y tu dinero garantizado
+<br><div="condiciones">¿Cuando?</div> 1-3 meses, negociables.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Avisanos cuando lo hagas, para empezar a trabajar con tu cuenta
+<br><div="condiciones">¿Condiciones?</div> Tu dinero está garantizado. Lo único que tienes que hacer es esperar. No puedes abrir ni modificar ninguna operación. Cuando tu ganancia supere el 50%, nos quedaremos con el 25% de los beneficios extra</li></font></ul>
+</vb:if></p>
+
+
+<hr>
+<p>
+<p class="right">
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="200" height="200" id="Plus500"> <param name="movie" value="http://cdn.plus500.com/Media/Banners/200x200/2368.swf"> <param name="quality" value="high"><param name="wmode" value="opaque"><param name="swfversion" value="6.0.65.0"><param name=FlashVars value="link=http%3A//www.plus500.com/es/StartTrading.aspx%3Fid%3D68564%26pl%3D2&amp;clickTAG=http%3A//www.plus500.com/es/StartTrading.aspx%3Fid%3D68564%26pl%3D2&amp;bannerLoop=0 "/><!--[if !IE]>--> <object data="http://cdn.plus500.com/Media/Banners/200x200/2368.swf" width="200" height="200" type="application/x-shockwave-flash"><!--<![endif]--> <param name="quality" value="high"><param name="wmode" value="opaque"><param name="swfversion" value="6.0.65.0"><param name=FlashVars value="link=http%3A//www.plus500.com/es/StartTrading.aspx%3Fid%3D68564%26pl%3D2&amp;clickTAG=http%3A//www.plus500.com/es/StartTrading.aspx%3Fid%3D68564%26pl%3D2&amp;bannerLoop=0"/><!--[if !IE]>--></object><!--<![endif]--></object>
+<p class="left">  
+<b><i><h2>Plus500</h2> </i></b>
+Si quieres una plataforma sencilla y potente, Plus500 es una plataforma para tí. Con comisiones menores que eToro (2 pips para el par EUR/USD) y un bono de 25€ sólo por inscribitte, hacen de Plus500 la mejor opción para traders que quieren empezar a invertir por su cuenta.</p>
+
+<p> En Plus500 con una inversion mínima de 100€ tendras 65€ extra, para dar mas margen a tus operaciones. No te debes preocupar de un asunto complejo en el forex, como es el apalancamiento, ya que el broker Plus500 te lo calcula automáticamete en función de tu saldo. Puedes invertir en acciones, FTDs, materias primas, y cómo no en divisas, incluyendo además el Bitcoin.</p>
+
+<p> Sin comisiones ni tasas ocultas. Sólo debes tener en cuenta que no permite la táctica de Scalping. Podrás operar como si estuvieras en el PC, en sus aplicaciones para iOS y Android.</p>
+
+<p>Plus500 está regulado en países tan estrictos como Reino Unido.</p>
+
+
+<p text=red><b><font-color="red">Nuestra oferta:</b> Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+</font></ul>
+
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> 
+
+Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+¿Hablamos de rentabilidad?Tenemos 2 planes:<ul>
+
+<li>Deposita 100€/S y te damos un  bono de 50$ tras hacer tus operaciones.
+<br><div="condiciones">¿Cuando?</div> Máximo 30 días desde tu depósito. Debes habr generado una prima de 30$. No te preocupes, es fácil, lo harás sin darte cuenta.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. El  pago te lo enviamos en el procesador de pagos que eligas
+<br><div="condiciones">¿Condiciones?</div> Usar tu cuenta de Plus500. Al menos 30$ de prima.</li></ul>
+
+<ul><li>
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)">
+
+
+<li>Deposita 100€/S y te damos un  bono de 70$ tras hacer tus operaciones.
+<br><div="condiciones">¿Cuando?</div> Máximo 30 días desde tu depósito. Debes habr generado una prima de 30$. No te preocupes, es fácil, lo harás sin darte cuenta.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. El  pago te lo enviamos en el procesador de pagos que eligas
+<br><div="condiciones">¿Condiciones?</div> Usar tu cuenta de Plus500. Al menos 30$ de prima.</li></ul>
+¡Nosotros te llevamos la cuenta! Con una rentabilidad media del 25%, y tu dinero garantizado
+<br><div="condiciones">¿Cuando?</div> 1-3 meses, negociables.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Avisanos cuando lo hagas, para empezar a trabajar con tu cuenta. Debes tener al menos 10 minutos de disponibilidad al día, y dejarnos acceder vía TeamViewer (o similar) a tu PC.
+<br><div="condiciones">¿Condiciones?</div> Tu dinero está garantizado. Lo único que tienes que hacer es esperar. No puedes abrir ni modificar ninguna operación que no te hayamos hecho nosotros. Cuando tu ganancia supere el 50%, nos quedaremos con el 25% de los beneficios extra</li></font></ul>
+</vb:if></p>
+
+
+
+
+<hr>
+   <p class="left">
+<a href="http://bonus.belforfx.com/esp/?a_aid=87&amp;a_bid=cdce8acc" target="_blank"><img src="http://static.belforfx.com/EspanolBanners/EDU/ESP_EDU_300x250.gif" alt="ESP_EDU_300x250" title="ESP_EDU_300x250" width="300" height="250" /></a><img style="border:0" src="http://partnerships.belforfx.com/scripts/imp.php?a_aid=87&amp;a_bid=cdce8acc" width="1" height="1" alt="" />
+
+<b><i><h2>Belforfx</h2> </i></b>
+<p>Aún no son muchas las opiniones de Belforfx que encontramos en Internet, ya que se trata de un nuevo broker que se está abriedo paso. Podemos estar seguros de que nuestro dinero está en buenas manos, ya que se trata de una plataforma regulada, con sede en Nueva Zelanda, Londres Nueva York, Hamburgo....</p>
+
+
+<p> Belforfx es para todo tipo de personas, desde los traders novatos, que cuentan con material educativo en Forex, hasta para expertos, gracias a sus herramientas de análisis y su soporte en Metatrader 4 (MT4). Además podemos seguir la misma estrategia que en el Openbook de eToro, ya que cuenta con una red social (social trading)parecida, en la que podemos charlar y discutir sobre operaciones con otros traders, además de copiarles.</p>
+
+<p> BelforFX te permite negociar con una gran variedad de instrumentos financieros, 51 pares de divisas, además de CDF’s, acciones y futuros sobre materias primas. Ofrecen también sistemas de autotrading, esto ya para traders más expertos. Belfor también pone a nuestra disposición aplicaciones adatadas para Anroid e iOS.
+
+
+<p> El depósito minimo es de 100$, y desgraciadamente, no admite ni Paypal ni Skrill como métodos de pago, salvo que lo requieras al soporte. Te ofrecen 35$ sólo por inscribirte. ¡Aprovechalos!
+
+
+
+
+<p text=red><b><font-color="red">Nuestra oferta:</b> Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+</font></ul>
+
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> 
+
+Te asesoramos en tus primeros pasos con el forex, dandote herramientas y tutoriales para que aprendas a desenvolverte en el mercado de divisas. 
+¿Hablamos de rentabilidad?Tenemos 2 planes:<ul>
+
+<li>Deposita 200€/S y te damos un  bono de 70$ tras hacer tus operaciones.
+<br><div="condiciones">¿Cuando?</div> Máximo 30 días desde tu depósito. 
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. El  pago te lo enviamos en el procesador de pagos que eligas
+<br><div="condiciones">¿Condiciones?</div> Usar tu cuenta de Belfor Fx. Al menos 10 operaciones.</li><li>
+
+¡Nosotros te llevamos la cuenta! Con una rentabilidad media del 25%, y tu dinero garantizado
+<br><div="condiciones">¿Cuando?</div> 1-3 meses, negociables.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Avisanos cuando lo hagas, para empezar a trabajar con tu cuenta. Debes tener al menos 10 minutos de disponibilidad al día, y dejarnos acceder vía TeamViewer (o similar) a tu PC.
+<br><div="condiciones">¿Condiciones?</div> Tu dinero está garantizado. Lo único que tienes que hacer es esperar. No puedes abrir ni modificar ninguna operación que no te hayamos hecho nosotros. Cuando tu ganancia supere el 50%, nos quedaremos con el 25% de los beneficios extra</li></font></ul>
+</vb:if></p>
+
+
+
+
+
+   </div>
+
+
+
+   <!--Contenido de la Pestaña 2-->
+   <div id="content-2">
+    <p class="left"><!-- Affiliate Code Do NOT Modify--><!-- Affiliate Code Do NOT Modify--><a onclick="window.open(this.href,'_blank');return false;" href="http://affiliates.bet-at-home.com/processing/clickthrgh.asp?btag=a_75744b_30438&aid="  ><img src="http://affiliates.bet-at-home.com/processing/impressions.asp?btag=a_75744b_30438&aid=" alt="bet-at-home.com"  style="border:none; width:200px;  height:250px; "/></a><!-- End affiliate Code--></p><br><b><i><h2>Bet-at-home</h2></i></b>
+<p>En la casa de Apuestas de Bet-At-Home tienes una gran variedad de eventos a los que apostar, entre los que se encuentran por ejemplo, las carreras de galgos. Además nos ofrece el servicio completo, Póker, Casino en vivo y juegos. <br> Bet-At-Home no destaca por sus cuotas altas, que están en la media de casas europeas, si no por su buen servicio al cliente, cosa que en algunas casas es muy deficiente. Además las liquidaciones de apuestas, son muy rápidas. Otro punto a favor es su fácil navegación y manejo. ¿Problemas para retirar o depositar? Ningun, ya que acepta muchas formas de hacerlo</p>
+<p>Respecto al bono de bienvenida, es diferente según la sección de la web y el país, pero el bono de bienvenida de Bet-At-Home para apuestas es 100% hasta 50€ en la mayoría de países, teniendolo que apostar 4 veces el bono a cuota mínima (simple o cada uno de las selecciones de una combinada) a 1,7.</p>
+<p>Además del bono, tiene una promoción bastante inusual; regala 50€ a un cliente. Para conseguirlos sólo debe iniciar sesión, si no lo hace, el bote aumenta cada día en 50€. Teniendo en cuenta que Bet-At-Home cuenta con más de 2 millones de clientes, no es fácil, pero...
+
+<p text=red><b><font-color="red">Nuestra oferta:</b> Te asesoramos en el caso de que quieras aprender a liberar bonos. Además por tu ingreso de 35€/$ te daremos 15€. 
+<br><div="condiciones">¿Cuando?</div> en menos de 10 días.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Te mandaremos el dinero al proceador que quieras.
+<br><div="condiciones">¿Condiciones?</div> Depósito mínimo de 30€/45$. Debes apostar al menos esa cantidad a una cuota mínima de 1.5
+</font>
+
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> Te asesoramos en el caso de que quieras aprender a liberar bonos. Además por tu ingreso de 35€/$ te daremos 20€. 
+<br><div="condiciones">¿Cuando?</div> en menos de 5 días.
+<br><div="condiciones">¿Cómo?</div> Registrate desde aquí; contactanos usando el formulario y te confirmaremos el registro. Ya puedes depositar. Te mandaremos el dinero al proceador que quieras.
+<br><div="condiciones">¿Condiciones?</div> Depósito mínimo de 30€/45$. Debes apostar al menos esa cantidad a una cuota mínima de 1.5</font></vb:if></p>
+
+<p class="right"><a href="http://online.sportium.es/promoRedirect?key=ej0xMzU1MzU5MSZsPTEzNTY2NjUyJnA9MTExNzU4">
+ <img src="http://online.sportium.es/promoLoadDisplay?key=ej0xMzU1MzU5MSZsPTEzNTY2NjUyJnA9MTExNzU4" width="300" height="300"/>
+</a></p><br>
+<p><b><i><h2>Sportium</h2></i></b></p>
+Sportium es la nueva casa de apuestas del mercado español, que aglutina a Cirsa y a Lbapuestas, tomando lo mejor de ambas. 
+Sin exagerar, podemos decir que se trata de la casa de apuestas con más promociones diarias. Ya sea con fútbol, con baloncesto (por ejemplo la NBA), motos, o tenis; día a día nos ofrece interesantes promociones, de entre un 25% y un 100% de devolución, algunas de ellas, realmente aprovechables y que no debes desaprovechar para ganar un extra de dinero.
+Las cuotas de Sportium, se encuentran en la media entre las casas europeas, y la variedad en los mercados es bastante amplia. En un mismo partido podemos encontrar más de 160 apuestas, aunque se hechan en falta apuestas a tarjetas o córners en fútbol.
+
+<p>La atención al soporte es rápida gracias a su chat en vivo, y teléfono gratuito. Los retiros tardan 1-2 días teniendo para depositar  los más conocidos. Sin embargo para retirar hechamos en falta tarjetas prepago</p>
+<p><b>Su bono de bienvenida, es el mejor del mercado español</b>, y practicamente mundial. Es apto tanto para los que arriesgan cómo para los que simplemente quieren liberar el bono y marchar. Se trata de 4 Freebets, que nos darán con nuestras 4 apuestas fallidas. Es decir, podemos apostar sin dudarlo; con un seguro, la primera apuesta que fallemos (cuota mayor a 2, o combinadas de al menos 5 selecciones), nos darán una freebet de hasta 50€. ¡4 veces, hasta un total de 200€! Para aprovechar al máximo estas freebet, haz tus apuestas de 50€ </p>
+
+<p>No sólo su oferta en apuestas deportivas es de destacar; también su sección de casino, y especialmente el póker con un bono de bienvenida muy interesante. ¡200% hasta 1000€ y cuatro tickets para sus torneos de bienvenida!
+
+<p text=red><b><font-color="red">Nuestra oferta: ¡5€ sólo por registrarte desde aquí y depositar y apostar 30€! Además si quieres aprender a liberar bonos; Te ayudamos a liberar el bono, con dos técnicas bien diferentes, tu eliges, dependiendo del riesgo que quieras asumir
+<br>
+¿Prefieres Poker? <a href="http://online.sportium.es/promoRedirect?key=ej0xMzU1MzU3MiZsPTEzNTY2NjU2JnA9MTExNzU4">Registrate desde aquí</a>, deposita al menos 25€, libera el bono de bienvenida y te daremos otros 5€!</b> 
+<br> ¡Aun más! El próximo 8 de Marzo celebraremos otra edición del torneo de Foro-PTC. La entrada cuesta 1€. Si te apuntas.. ¡¡Te devolvemos el euro!! Premio de 100€ +bote acumulado, no te lo pierdas!!
+
+</font>
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> Además del máximo asesoramiento en el mundo de las apuestas (ver más abajo), te ofrecemos 15€ solo por registrarte desde aquí y depositar y apostar 30€. ¡¡EXCLUSIVO!! </font></vb:if>
+
+
+
+    <p class="right"><a href="http://tc.tradetracker.net/?c=11923&amp;m=431154&amp;a=172263&amp;r=&amp;u=" target="_blank" rel="nofollow"><img src="http://ti.tradetracker.net/?c=11923&amp;m=431154&amp;a=172263&amp;r=&amp;t=html" width="200" height="200" border="0" alt="" /></a><p><b><i><h2>WilliamHill</h2></i></b></p>
+
+   <p> WilliamHill es una casa tradicional del Reino Unido, fundada en 1934. Junto con bet365 y Bwin es una de las más conocidas Con unas cuotas muy similares a la media, destaca por su amplio mercado de apuestas, tanto las cotidianas, como especiales, en las que de vez en cuando se puede encontrar algún chollo </p>
+    <p> ¡Un consejo! Verifica tu cuenta (enviando tus documentos), antes de pedir el pago. Será más rápido y seguro
+    <p text=red><b><font-color="red">Nuestra oferta: ¡5€ sólo por registrarte desde aquí y depositar y apostar 30€! ¿Prefieres Poker o Casino? Registrate desde aquí</a>, deposita al menos 35€, juega tu saldo al menos una vez y te daremos 5€!</b> </font-color="red"></p>
+
+</font>
+<vb:if condition="is_member_of($bbuserinfo, 41, 42)"><p><b><font-color="red">Nuestra oferta para VIPs como TÚ:</b> Además del máximo asesoramiento en el mundo de las apuestas (ver más abajo), te ofrecemos 15€ solo por registrarte desde aquí y depositar y apostar 30€. ¡¡EXCLUSIVO!! </font></vb:if>
+   </div>
+   <!--Contenido de la Pestaña 3-->
+   <div id="content-3">
+  
+
+<p class="left="><b><i>Casino Titan</i></b>
+<a href="http://www.casinotitan.im/aiddownload.php?affid=71639" target="_blank"><img src="http://banner.affactive.com/RESOURCES/CasinoTitan/2010101212592859/3000_200_200.gif" width="200" height="200" border="0" /></a></p><br>
+
+
+    <p text=red><b><font-color="red">Nuestra oferta: En este momento no tenemos ninguna oferta disponible. ¡Vuelve en unos días!</b> </font-color="red"></p>
+
+ <p class="left"><left><a href="http://online.casinodelrio.com/promoRedirect?member=dobladordinero&campaign=DEFAULT&channel=DEFAULT&zone=52023255&lp=52016365"><img src="http://online.winner.com/promoLoadDisplay?member=dobladordinero&campaign=DEFAULT&channel=foro&zone=52983712&lp=0" width="200" height="200" border="0" />
+</a>
+</left>
+<h2> <i><b>Winner casino</h2> </i></b>
+Winner Casino es un casino en el que la diversión es lo primero. Con gran variedad de juegos disponibles, como varios tipos de ruleta y Blackjack. 
+<p>
+Winner ofrece diferentes bonos por depósito dependiendo de tus posibilidades:
+    <ul>
+     <li><b>Bono de 5 €</b>: Los depósitos de entre 20 € y 24 € reciben un bono de bienvenida de 5 € en Winner. Sólamente tendrás que apostar 8 veces la suma de bono y depósito para cumplir con las condiciones de Rollover</li>
+     <li><b>Bono del 200% hasta 350 €</b>: los depósitos de entre 25 € y 699 € pueden obtener un bono del 200% hasta un máximo de 350 €. Los jugadores que se hagan con este bono de Winner tendrán que apostar 22 veces la suma de bono y depósito para cumplir con los requisitos del mismo.</li>
+     <li><b>Bono Mid-Roller de 700 €</b>: depósitos entre 700 € y 2499 € reciben un bono de 700€. Para cumplir con las condiciones de los bonos de bienvenida de Winner, tendrás que jugar la suma de bono y depósito 20 veces.
+</li>
+    </ul>
+Puedes jugar con Winner Casino en el móvil gracias a Winner móvil. Es sí, si eres de España, debes tener cuidado, Winner NO tiene licencia de juego en España</p>
+
+   </div>
+
+<div id="content-4">
+    <p></p>
+    <ul>
+     <li>P</li>
+     <li></li>
+     <li>    
+</li>
+    </ul>
+   </div>
+<div id="content-5">
+     <p>FilesFetcher -Alemania</p>
+    <ul>
+     <li><a href="http://track.adbooth.net/aff_c?offer_id=4490&aff_id=4890&file_id=317652" target="_blank"><img src="http://media.go2speed.org/brand/files/adbooth/4490/20131018123310-300X250.jpg" width="300" height="250" border="0" /></a><img src="http://track.adbooth.net/aff_i?offer_id=4490&aff_id=4890&file_id=317652" width="1" height="1" /><img src="http://track.adbooth.net/aff_i?offer_id=4490&aff_id=4890&file_id=317652" width="1" height="1" />
+Puedes hostear tus archivos en este servidor!
+.</li>
+     <li><p text=red><b><font-color="red">Nuestra oferta: Crea una cuenta y compra la membresía de 7 días (gratis!) Al hacerlo, te daremos 3€! ¿No tienes VCC para pagar? Te la damos a cambio de 1$</b><br>¡¡¡Importante!! Completa esta oferta 1 sóla vez por IP, y máximo 5 veces al día </font-color="red"></p>
+      </li>
+     <li></li>
+    </ul>
+    <p></p>
+   
+</div>
+
+<div id="content-6"><br><br><br>
+ </p>
+
+    <ul>
+     <li></li>
+     <li></li>
+    </ul>
+  
+   </div>
+</div>
+
+</div>
+
+ </div>
+</div> {vb:raw footer}
+  </body>
+</html>
